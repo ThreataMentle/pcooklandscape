@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P. Cook Trees & Landscapes | Home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="P. Cook Trees & Landscapes logo"></a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="gallery.html">Previous Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-panel">
+                <div class="hero-copy">
+                    <div class="brand-mark">
+                        <h1>P. Cook</h1>
+                        <h2>TREES &amp;<br>LANDSCAPES</h2>
+                    </div>
+
+                    <ul class="services-list">
+                        <li>TREES &amp; HEDGES TOPPED &amp; TRIMMED</li>
+                        <li>GARDEN MAINTENANCE</li>
+                        <li>FENCING</li>
+                        <li>SLABBING</li>
+                        <li>TURFING</li>
+                        <li>PRESSURE WASHING</li>
+                        <li>MONOBLOCK</li>
+                        <li>GRAVEL &amp; BARK SUPPLIED &amp; LAID</li>
+                        <li>EXTERIOR PAINTING</li>
+                        <li>ALL RUBBISH REMOVED</li>
+                    </ul>
+
+                    <div class="estimate-box">
+                        <p>CALL FOR A FREE ESTIMATE</p>
+                        <span>07377 714 221</span>
+                        <span>or</span>
+                        <span>07765 263 155</span>
+                    </div>
+                </div>
+
+                <img class="hero-art" src="images/transparent.png" alt="P. Cook Trees & Landscapes transparent logo">
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>
+                    At <strong>P. Cook Trees & Landscapes</strong>, we provide professional landscaping and garden care
+                    services across Scotland. From complete garden design and build projects to lawn maintenance, hedge
+                    cutting and patio installations, we deliver quality workmanship at fair prices with reliable service.
+                    We take pride in treating every outdoor space as if it were our own, creating gardens our customers can
+                    enjoy for years to come.
+                </p>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2>Why Choose Us?</h2>
+
+                <div class="cards">
+                    <div class="card">
+                        <h3>Experienced</h3>
+                        <p>Years of professional experience in landscaping and exterior work.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Reliable</h3>
+                        <p>We arrive on time, work professionally, and leave the site tidy.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Affordable</h3>
+                        <p>Competitive pricing and clear advice before the work begins.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Quality</h3>
+                        <p>We take pride in producing long-lasting, high-quality results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Want to see our previous projects?</h2>
+            <a href="gallery.html" class="btn">View Gallery</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 P. Cook Trees &amp; Landscapes. All Rights Reserved.</p>
+        <p>Email: pcooklandscaping@gmail.com</p>
+        <p>Phone: 07377 714 221 or 07765 263 155</p>
+    </footer>
+
+    <script>
+        const header = document.querySelector('.site-header');
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > lastScrollY && currentScrollY > 80) {
+                header.classList.add('is-hidden');
+            } else {
+                header.classList.remove('is-hidden');
+            }
+
+            lastScrollY = currentScrollY;
+        });
+    </script>
+
+</body>
+</html>

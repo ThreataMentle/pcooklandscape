@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P. Cook Trees & Landscapes | Previous Work</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="site-header">
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="P. Cook Trees & Landscapes logo"></a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html" class="active">Previous Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <h1>Our Previous Work</h1>
+    <p>Click or tap on the images to see a before and after comparison.</p>
+</section>
+
+<section class="gallery">
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <div class="comparison-grid" tabindex="0" role="button" aria-pressed="false" aria-label="Toggle before and after">
+                <div class="comparison-panel before-panel">
+                    <span class="comparison-label before">Before</span>
+                    <img src="images/floor tiling before.jpg" alt="Before floor tiling work" class="before-image">
+                </div>
+                <div class="comparison-panel after-panel">
+                    <span class="comparison-label after">After</span>
+                    <img src="images/floor tiling.jpg" alt="After floor tiling work" class="after-image">
+                </div>
+            </div>
+            <h3>Floor Tiling</h3>
+            <p>Showing the transformation from worn flooring to a polished finish.</p>
+        </div>
+
+        <div class="gallery-item">
+            <div class="comparison-grid" tabindex="0" role="button" aria-pressed="false" aria-label="Toggle before and after">
+                <div class="comparison-panel before-panel">
+                    <span class="comparison-label before">Before</span>
+                    <img src="images/hedge trimming before.jpg" alt="Before hedge trimming work" class="before-image">
+                </div>
+                <div class="comparison-panel after-panel">
+                    <span class="comparison-label after">After</span>
+                    <img src="images/hedge trimming.png" alt="After hedge trimming work" class="after-image">
+                </div>
+            </div>
+            <h3>Hedge Trimming</h3>
+            <p>Neat and tidy garden edges after a full trim.</p>
+        </div>
+
+        <div class="gallery-item">
+            <div class="comparison-grid" tabindex="0" role="button" aria-pressed="false" aria-label="Toggle before and after">
+                <div class="comparison-panel before-panel">
+                    <span class="comparison-label before">Before</span>
+                    <img src="images/grass cutting before.jpg" alt="Before grass cutting work" class="before-image">
+                </div>
+                <div class="comparison-panel after-panel">
+                    <span class="comparison-label after">After</span>
+                    <img src="images/grass cutting.jpg" alt="After grass cutting work" class="after-image">
+                </div>
+            </div>
+            <h3>Freshly Cut Lawn</h3>
+            <p>Lawn maintenance that brings the garden back to life.</p>
+        </div>
+
+        <div class="gallery-item">
+            <div class="comparison-grid" tabindex="0" role="button" aria-pressed="false" aria-label="Toggle before and after">
+                <div class="comparison-panel before-panel">
+                    <span class="comparison-label before">Before</span>
+                    <img src="images/pathing before.jpg" alt="Before path work" class="before-image">
+                </div>
+                <div class="comparison-panel after-panel">
+                    <span class="comparison-label after">After</span>
+                    <img src="images/pathing.jpg" alt="After path work" class="after-image">
+                </div>
+            </div>
+            <h3>Pathing</h3>
+            <p>Clean, durable paths created to improve access and style.</p>
+        </div>
+
+        <div class="gallery-item">
+            <div class="comparison-grid" tabindex="0" role="button" aria-pressed="false" aria-label="Toggle before and after">
+                <div class="comparison-panel before-panel">
+                    <span class="comparison-label before">Before</span>
+                    <img src="images/garden improvement before.jpg" alt="Before garden improvement work" class="before-image">
+                </div>
+                <div class="comparison-panel after-panel">
+                    <span class="comparison-label after">After</span>
+                    <img src="images/garden improvement.jpg" alt="After garden improvement work" class="after-image">
+                </div>
+            </div>
+            <h3>Garden Improvement</h3>
+            <p>Thoughtful upgrades that make outdoor spaces more inviting.</p>
+        </div>
+
+        <div class="gallery-item">
+            <div class="comparison-grid" tabindex="0" role="button" aria-pressed="false" aria-label="Toggle before and after">
+                <div class="comparison-panel before-panel">
+                    <span class="comparison-label before">Before</span>
+                    <img src="images/fencing before.jpg" alt="Before fencing work" class="before-image">
+                </div>
+                <div class="comparison-panel after-panel">
+                    <span class="comparison-label after">After</span>
+                    <img src="images/fencing.jpg" alt="After fencing work" class="after-image">
+                </div>
+            </div>
+            <h3>Fencing</h3>
+            <p>New fencing that adds privacy, structure, and curb appeal.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Like what you see?</h2>
+    <p>Get in touch today for a free quote.</p>
+    <a href="contact.html" class="btn">Contact Us</a>
+</section>
+
+<footer>
+    <p>&copy; 2026 P. Cook Trees &amp; Landscapes. All Rights Reserved.</p>
+    <p>Email: pcooklandscaping@gmail.com</p>
+    <p>Phone: 07377 714 221 or 07765 263 155</p>
+</footer>
+
+<script>
+    const header = document.querySelector('.site-header');
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+
+        if (currentScrollY > lastScrollY && currentScrollY > 80) {
+            header.classList.add('is-hidden');
+        } else {
+            header.classList.remove('is-hidden');
+        }
+
+        lastScrollY = currentScrollY;
+    });
+
+    document.querySelectorAll('.comparison-grid').forEach(function(grid){
+        grid.addEventListener('click', function(){
+            grid.classList.toggle('show-after');
+            grid.setAttribute('aria-pressed', grid.classList.contains('show-after'));
+        });
+
+        grid.addEventListener('keydown', function(e){
+            if(e.key === 'Enter' || e.key === ' '){
+                e.preventDefault();
+                grid.click();
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
