@@ -214,6 +214,7 @@ h1, h2, h3, .nav-links a, .services-list li, .estimate-box p, .estimate-box span
 }
 
 .hero-gallery-button {
+    display: block;
     margin: 0 0 1.2rem;
     background: var(--sage);
     color: #071008;
@@ -221,6 +222,7 @@ h1, h2, h3, .nav-links a, .services-list li, .estimate-box p, .estimate-box span
     padding: 0.7rem 1.8rem;
     font-size: 1.5rem;
     box-shadow: 0 0 0 3px var(--sage-deep), 0 8px 18px rgba(0, 0, 0, 0.35);
+    width: fit-content;
 }
 
 .hero-gallery-button:hover {
@@ -232,17 +234,15 @@ h1, h2, h3, .nav-links a, .services-list li, .estimate-box p, .estimate-box span
 
 .estimate-box {
     position: relative;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    width: min(100%, 820px);
     text-align: center;
     background: transparent;
     color: #071008;
     padding: 0.75rem 1.2rem 0.8rem;
-    min-width: min(100%, 500px);
     box-shadow: none;
     overflow: visible;
+    margin-top: 0.2rem;
 }
 
 .estimate-box::before {
